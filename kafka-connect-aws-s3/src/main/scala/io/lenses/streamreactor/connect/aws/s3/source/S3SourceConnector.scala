@@ -21,7 +21,7 @@ import io.lenses.streamreactor.connect.aws.s3.config.TaskDistributor.distributeT
 import io.lenses.streamreactor.connect.aws.s3.source.config.S3SourceConfigDef
 import org.apache.kafka.common.config.ConfigDef
 import org.apache.kafka.connect.connector.Task
-import org.apache.kafka.connect.source.ExactlyOnceSupport
+//import org.apache.kafka.connect.source.ExactlyOnceSupport
 import org.apache.kafka.connect.source.SourceConnector
 
 import java.util
