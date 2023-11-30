@@ -49,6 +49,6 @@ class S3SourceConnector extends SourceConnector with LazyLogging {
     distributeTasks(props, maxTasks)
   }
 
-  override def exactlyOnceSupport(connectorConfig: util.Map[String, String]): ExactlyOnceSupport =
-    ExactlyOnceSupport.SUPPORTED
+//  override def exactlyOnceSupport(connectorConfig: util.Map[String, String]): ExactlyOnceSupport =
+//    ExactlyOnceSupport.SUPPORTED
 }

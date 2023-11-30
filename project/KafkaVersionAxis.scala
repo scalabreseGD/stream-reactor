@@ -9,12 +9,13 @@ case class KafkaVersionAxis(kafkaVersion: String) {
 
 object KafkaVersionAxis {
   private val kafkaToConfluentVersion = Map(
+    "2.5.0" -> "5.5.7",
     "2.8.1" -> "6.2.2",
     "3.3.0" -> "7.3.1",
   )
 
   // KafkaVersion could later be a parameter
-  val kafkaVersion:     String           = "3.3.0"
+  val kafkaVersion:     String           = "2.5.0"
   val kafkaVersionAxis: KafkaVersionAxis = KafkaVersionAxis(kafkaVersion)
 
 }
