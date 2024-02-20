@@ -100,7 +100,7 @@ sbt assembly
 To build a particular project:
 
 ```bash
-sbt "project cassandra" compile
+sbt "project aws-s3" compile
 ```
 
 To test a particular project:
@@ -112,7 +112,7 @@ sbt "project cassandra" test
 To create a jar of a particular project:
 
 ```bash
-sbt "project cassandra" assembly
+sbt "project aws-s3" assembly
 ```
 
 ### Running E2E tests

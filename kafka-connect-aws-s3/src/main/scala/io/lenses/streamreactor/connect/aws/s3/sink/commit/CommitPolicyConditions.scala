@@ -61,7 +61,7 @@ case class Interval(interval: Duration, clock: Clock) extends CommitPolicyCondit
     val logLine = Option.when(debugEnabled) {
       val flushing      = if (nextFlushDue) "*" else ""
       val timeRemaining = nextFlushTime.getEpochSecond - nowInstant.getEpochSecond
-      s"interval$flushing: {frequency:${interval.toSeconds}s, in:${timeRemaining}s, lastFlush:${lastWriteInstant.toString.substring(0,
+      s"interval$flushing: {frequency:${interval.toMinutes*60}s, in:${timeRemaining}s, lastFlush:${lastWriteInstant.toString.substring(0,
                                                                                                                                     19,
       )}, nextFlush:${nextFlushTime.toString.substring(0, 19)}}"
     }

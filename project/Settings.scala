@@ -54,7 +54,7 @@ object Settings extends Dependencies {
 
     val commonOptions = Seq(
       // standard settings
-      "-release:11",
+      "-release:8",
       "-encoding",
       "UTF-8",
       "-unchecked",
@@ -121,7 +121,7 @@ object Settings extends Dependencies {
     scalaVersion := Dependencies.scalaVersion,
     headerEmptyLine := false,
     isSnapshot := artifactVersion.contains("SNAPSHOT"),
-    javacOptions ++= Seq("--release", "11"),
+    javacOptions ++= Seq("-source", "1.8", "-target", "1.8"),
     packageOptions := Seq(
       ManifestAttributes(
         ("Git-Commit-Hash", "git rev-parse HEAD".!!.trim),
